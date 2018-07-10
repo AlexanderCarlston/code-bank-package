@@ -49,7 +49,6 @@ inquirer.prompt(questions).then(answers => {
           shell.cd(vaultName)
           for (var i = 0; i < snippets.length; i++) {
             shell.exec(`git clone ${snippets[i].git_pull_url}`)
-            // var str = shell.cat(`${snippets[i].files[Object.keys(snippets[i].files)[0]].filename}`)
           }
           shell.exec("git clone https://gist.github.com/3d6c04518e71003b7b25447314e83271.git")
           shell.cp("./3d6c04518e71003b7b25447314e83271/index.js", ".")
