@@ -64,6 +64,11 @@ inquirer.prompt(questions).then(answers => {
             shell.exec(`git clone ${snippets[i].git_pull_url}`)
           }
           shell.exec("git clone https://gist.github.com/3d6c04518e71003b7b25447314e83271.git")
+          shell.cp("./3d6c04518e71003b7b25447314e83271/index.js", ".")
+          shell.rm("-rf", "3d6c04518e71003b7b25447314e83271")
+          shell.exec("npm init -y")
+          shell.exec("npm install require-directory")
+          shell.exec("npm link")
         }
       }
     })
