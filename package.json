@@ -1,0 +1,27 @@
+{
+  "name": "code-bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "./init.js"
+  },
+  "author": "alexandercarlston",
+  "license": "MIT",
+  "bin": {
+    "code-bank": "./index.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.16.0",
+    "export-files": "^2.1.1",
+    "inquirer": "^6.0.0",
+    "js-beautify": "^1.7.5",
+    "node-fetch": "^2.1.2",
+    "nodegit": "^0.22.1",
+    "promptly": "^3.0.3",
+    "shelljs": "^0.8.2"
+  }
+}

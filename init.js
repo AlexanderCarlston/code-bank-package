@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+const shell = require('shelljs')
+const inquirer = require('inquirer');
+shell.cd("~")
+shell.mkdir("code_bank")
+shell.cd("code_bank")
+shell.mkdir("art")
+shell.cd("art")
+shell.exec("git clone https://gist.github.com/e8d23e60b3f0329285e4827b9e859d7c.git")
+shell.exec("git clone https://gist.github.com/08b207831da9cb5f8bdafa3dc3ce2041.git")
+shell.exec("git clone https://gist.github.com/822ff404072160c9ab8d499514326a2e.git")
+shell.cd("..")
+shell.mkdir("files")
+shell.cd("files")
+shell.exec("git clone https://gist.github.com/3d6c04518e71003b7b25447314e83271.git")
+shell.cd("..")
